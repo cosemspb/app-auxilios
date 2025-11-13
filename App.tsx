@@ -1,17 +1,17 @@
 
 import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { Session } from '@supabase/supabase-js';
-import { supabase } from './supabaseClient.ts';
-import { Usuario, Solicitacao, TipoUsuario, StatusSolicitacao, DeslocamentoValor, DiariaValor } from './types.ts';
-import { AppContext, AppContextType, ModalState } from './AppContext.ts';
+import { supabase } from './supabaseClient';
+import { Usuario, Solicitacao, TipoUsuario, StatusSolicitacao, DeslocamentoValor, DiariaValor } from './types';
+import { AppContext, AppContextType, ModalState } from './AppContext';
 
-import Login from './components/Login.tsx';
-import Register from './components/Register.tsx';
-import Dashboard from './components/Dashboard.tsx';
-import Header from './components/Header.tsx';
-import Profile from './components/Profile.tsx';
-import ForgotPassword from './components/ForgotPassword.tsx';
-import ResetPassword from './components/ResetPassword.tsx';
+import Login from './components/Login';
+import Register from './components/Register';
+import Dashboard from './components/Dashboard';
+import Header from './components/Header';
+import Profile from './components/Profile';
+import ForgotPassword from './components/ForgotPassword';
+import ResetPassword from './components/ResetPassword';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);

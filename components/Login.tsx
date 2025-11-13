@@ -1,6 +1,6 @@
 
 import React, { useState, useContext } from 'react';
-import { AppContext } from '../AppContext.ts';
+import { AppContext } from '../AppContext';
 
 interface LoginProps {
     onShowRegister: () => void;

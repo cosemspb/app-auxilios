@@ -1,7 +1,7 @@
 
 import React, { useState, useContext } from 'react';
-import { AppContext } from '../AppContext.ts';
-import { Usuario, TipoUsuario } from '../types.ts';
+import { AppContext } from '../AppContext';
+import { Usuario, TipoUsuario } from '../types';
 
 interface ProfileProps {
   user: Usuario;

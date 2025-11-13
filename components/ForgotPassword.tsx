@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { supabase } from '../supabaseClient.ts';
+import { supabase } from '../supabaseClient';
 
 interface ForgotPasswordProps {
   onClose: () => void;

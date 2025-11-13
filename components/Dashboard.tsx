@@ -1,10 +1,10 @@
 
 import React, { useContext, useState, useMemo } from 'react';
-import { AppContext } from '../AppContext.ts';
-import { TipoUsuario, StatusSolicitacao, Solicitacao, Usuario } from '../types.ts';
-import SolicitacaoForm from './SolicitacaoForm.tsx';
-import SolicitacaoDetalhes from './SolicitacaoDetalhes.tsx';
-import RelatorioFinanceiro from './RelatorioFinanceiro.tsx';
+import { AppContext } from '../AppContext';
+import { TipoUsuario, StatusSolicitacao, Solicitacao, Usuario } from '../types';
+import SolicitacaoForm from './SolicitacaoForm';
+import SolicitacaoDetalhes from './SolicitacaoDetalhes';
+import RelatorioFinanceiro from './RelatorioFinanceiro';
 
 const StatusBadge: React.FC<{ status: StatusSolicitacao }> = ({ status }) => {
   const colorClasses = {
