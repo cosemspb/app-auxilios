@@ -1,6 +1,7 @@
+
 import React, { useState, useContext, useMemo, useEffect } from 'react';
-import { AppContext } from '../AppContext';
-import { Solicitacao, StatusSolicitacao } from '../types';
+import { AppContext } from '../AppContext.ts';
+import { Solicitacao, StatusSolicitacao } from '../types.ts';
 
 interface SolicitacaoFormProps {
   onCancel: () => void;

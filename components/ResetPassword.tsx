@@ -1,5 +1,6 @@
+
 import React, { useState, useContext } from 'react';
-import { AppContext } from '../AppContext';
+import { AppContext } from '../AppContext.ts';
 
 interface ResetPasswordProps {
   onClose: () => void;

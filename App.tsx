@@ -1,17 +1,17 @@
 
 import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { Session } from '@supabase/supabase-js';
-import { supabase } from './supabaseClient';
-import { Usuario, Solicitacao, TipoUsuario, StatusSolicitacao, DeslocamentoValor, DiariaValor } from './types';
-import { AppContext, AppContextType, ModalState } from './AppContext';
+import { supabase } from './supabaseClient.ts';
+import { Usuario, Solicitacao, TipoUsuario, StatusSolicitacao, DeslocamentoValor, DiariaValor } from './types.ts';
+import { AppContext, AppContextType, ModalState } from './AppContext.ts';
 
-import Login from './components/Login';
-import Register from './components/Register';
-import Dashboard from './components/Dashboard';
-import Header from './components/Header';
-import Profile from './components/Profile';
-import ForgotPassword from './components/ForgotPassword';
-import ResetPassword from './components/ResetPassword';
+import Login from './components/Login.tsx';
+import Register from './components/Register.tsx';
+import Dashboard from './components/Dashboard.tsx';
+import Header from './components/Header.tsx';
+import Profile from './components/Profile.tsx';
+import ForgotPassword from './components/ForgotPassword.tsx';
+import ResetPassword from './components/ResetPassword.tsx';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -38,7 +38,7 @@ const App: React.FC = () => {
       const { data: allUsers, error: rpcError } = await supabase.rpc('get_all_users_with_email');
       if (rpcError) {
         console.error("Error fetching users via RPC:", rpcError);
-        alert("Erro ao carregar a lista de usuários. Verifique as permissões da função no Supabase.");
+        alert("Erro ao carregar la lista de usuários. Verifique as permissões da função no Supabase.");
         setUsers([]);
       } else if (allUsers) {
         setUsers(allUsers as Usuario[]);

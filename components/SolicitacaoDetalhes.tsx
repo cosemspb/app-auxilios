@@ -1,6 +1,7 @@
+
 import React, { useContext, useState, useEffect, useRef } from 'react';
-import { Solicitacao, StatusSolicitacao, TipoUsuario } from '../types';
-import { AppContext } from '../AppContext';
+import { Solicitacao, StatusSolicitacao, TipoUsuario } from '../types.ts';
+import { AppContext } from '../AppContext.ts';
 
 const formatCurrency = (value: number) => {
   return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);

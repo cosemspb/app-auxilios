@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { Session } from '@supabase/supabase-js';
-import { Usuario, Solicitacao, TipoUsuario, DeslocamentoValor, DiariaValor } from './types';
+import { Usuario, Solicitacao, TipoUsuario, DeslocamentoValor, DiariaValor } from './types.ts';
 
 export type ModalState =
   | { view: 'none' }

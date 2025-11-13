@@ -1,7 +1,7 @@
 
 import React, { useContext, useState, useRef, useEffect } from 'react';
-import { AppContext } from '../AppContext';
-import { TipoUsuario } from '../types';
+import { AppContext } from '../AppContext.ts';
+import { TipoUsuario } from '../types.ts';
 
 const Header: React.FC = () => {
   const context = useContext(AppContext);

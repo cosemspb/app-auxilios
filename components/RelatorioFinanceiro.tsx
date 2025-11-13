@@ -1,6 +1,7 @@
+
 import React, { useState, useContext, useMemo } from 'react';
-import { AppContext } from '../AppContext';
-import { Solicitacao } from '../types';
+import { AppContext } from '../AppContext.ts';
+import { Solicitacao } from '../types.ts';
 
 // Inform TypeScript about the global jsPDF variable from the CDN
 declare global {
