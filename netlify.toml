@@ -1,0 +1,7 @@
+# Esta regra instrui a Netlify a servir todos os arquivos .tsx como se fossem JavaScript.
+# Isso é necessário para que os navegadores possam executá-los como scripts de módulo
+# em um projeto React que não utiliza uma etapa de "build".
+[[headers]]
+  for = "/*.tsx"
+  [headers.values]
+    Content-Type = "text/javascript"
